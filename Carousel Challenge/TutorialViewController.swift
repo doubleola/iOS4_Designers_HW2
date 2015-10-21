@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     
     @IBOutlet weak var tutorialScrollView: UIScrollView!
@@ -27,7 +27,9 @@ class TutorialViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tutorialScrollView.contentSize = CGSize(width: 1280, height:568)
-//        spinImage.alpha = 0
+        tutorialScrollView.delegate = self
+        
+        spinImage.alpha = 0
         
            }
 
@@ -36,22 +38,22 @@ class TutorialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-        func scrollViewDidEndDecelerating(tutorialScrollView: UIScrollView!) {
+        func scrollViewDidEndDecelerating(tutorialScrollView: UIScrollView) {
             // Get the current page based on the scroll offset
             let page : Int = Int(round(tutorialScrollView.contentOffset.x / 320))
             
             // Set the current page, so the dots will update
             pageControl.currentPage = page
             
-//            if page == 3 {
-//                pageControl.hidden = true
-//                spinImage.alpha = 1
-//                
-//            }
-//            else {
-//                pageControl.hidden = false
-//                spinImage.alpha = 0
-//            }
+            if page == 3 {
+                pageControl.hidden = true
+                spinImage.alpha = 1
+                
+            }
+            else {
+                pageControl.hidden = false
+                spinImage.alpha = 0
+            }
             
             // This method is called when the scrollview finally stops scrolling.
         }

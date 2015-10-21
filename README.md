@@ -1,6 +1,6 @@
 # Homework 2 Carousel Challenge
 
-Time: I spent around 5-6 hours on the exercise
+Time: I spent around 10-11 hours on the exercise
 
 Walkthrough of all the app stories:
 
@@ -25,8 +25,8 @@ Walkthrough of all the app stories:
 - [ ] Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
 - [X] Tutorial Screens
 - [X] User can page between the screens
-- [X] Optional: User can page between the screens with updated dots. Couldn’t get dots to change. Spend an hour or more trying to debug
-- [ ] Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
+- [X] Optional: User can page between the screens with updated dots. Couldn’t get dots to change. ~~Spend an hour or more trying to debug~~
+- [X] Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
 - [X] Image Timeline
 - [X] Display a scrollable view of images.
 - [X] User can tap on the conversations button to see the conversations screen (push).
